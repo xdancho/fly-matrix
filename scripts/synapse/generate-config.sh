@@ -3,5 +3,5 @@ if test -f /data/homeserver.yaml; then
     echo "Synapse homeserver config already exists"
     exit 0
 fi
-/start.py generate
-/start.py migrate_config
+/data/scripts/synapse/start.py generate
+/data/scripts/synapse/start.py migrate_config
